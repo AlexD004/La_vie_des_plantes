@@ -1,0 +1,131 @@
+/*
+Theme Name: flower-shop-lite-cef-edit
+Description: Theme enfant basé sur le thème 'flower-shop-lite' pour le devoir du CEF
+Author: Alexandre Dupré
+Author URI: 
+Template: flower-shop-lite
+Version: 0.1.0
+*/
+
+/* GLOBAL */
+.site-main{
+    width: 100%;
+}
+
+.elementor-widget-heading .elementor-heading-title,
+.elementor-kit-11 h2,
+h1.page-title,
+h1.entry-title {
+    font-family: 'Noto sans', sans-serif !important;
+    font-size: 2.5em;
+    text-align: center;
+    color: #1E4D3B;
+    font-weight: 700;
+}
+.elementor-widget-heading .elementor-heading-title::after,
+.elementor-kit-11 h2::after,
+h1.page-title::after,
+h1.entry-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #f97068;
+    margin: 20px auto 0;
+}
+
+.product h1.entry-title{text-align: left;}
+.product h1.entry-title::after{margin: 20px 0 0 0;}
+.product h2{font-size: 2em;}
+
+/* LOGO */
+.logo {padding: 5px 0;}
+.logo img {max-height: 90px;}
+
+/* PAGE D'ACCUEIL */
+.elementor-element-2d5f255.e-con{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Banniere */
+.nivo-directionNav,
+.nivo-caption .slide_info h2:after {
+    display: none;
+}
+.nivo-caption .slide_info h2{
+    font-size: 4em;
+    color:#1E4D3B;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.nivo-caption .slide_info p{
+    color:#1E4D3B;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 0;
+}
+.nivo-caption .slide_info .slide_more {
+    background-color: #f97068;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* CONTACT */
+form{
+    max-width: 960px;
+    margin: 0 auto;
+}
+form p {
+    margin: 20px 0;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"]{
+    width: 100%;
+    box-shadow: none;
+    border-radius: 15px;
+}
+
+/* BOUTIQUE */
+.added_to_cart.wc-forward {
+    border-radius: 20px;
+    background:#1E4D3B;
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+/* Bouton "Voir le panier" qui apparaît après ajout au panier */
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price{
+    color: #1E4D3B;
+    font-size: 2.5em;
+    margin: 40px 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+/* Bouton "Ajouter au panier" sur les fiches produits */
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
+    color:#fff;
+    background-color: #f97068;
+    border-radius: 20px;
+}
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover{
+    background-color: #799E2B;
+}
+/* Hide les infos meta */
+.product_meta{
+    display: none;
+}
+
+/* Rassembler nombre de résultat et input de recherche */
+.woocommerce .woocommerce-ordering,
+.woocommerce-page .woocommerce-ordering{
+    float: none;
+}
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count{
+    padding-right: 30px;
+}
+
+/* FOOTER */
+.footer h5{font-family: 'Noto Sans', sans-serif;}
+.footer p{font-family: 'Chakra Petch', sans-serif;}
